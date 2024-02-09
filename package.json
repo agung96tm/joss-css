@@ -1,0 +1,22 @@
+{
+  "name": "joss-css",
+  "version": "1.0.0",
+  "description": "Styling CSS for my themes purpose",
+  "main": "sass/joss.sass",
+  "scripts": {
+    "build": "node-sass --output-style expanded sass/joss.sass css/joss.css",
+    "start": "npm run build-sass -- --watch",
+
+    "build-bloggy": "node-sass --output-style expanded sass/@themes/bloggy/bloggy.sass css/joss-bloggy.css",
+    "start-bloggy": "npm run build-bloggy -- --watch"
+  },
+  "author": "Agung Yuliyanto <agung.96tm@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "clean-css-cli": "^5.6.2",
+    "node-sass": "^9.0.0",
+    "postcss-cli": "^10.1.0",
+    "rimraf": "^5.0.5"
+  }
+}

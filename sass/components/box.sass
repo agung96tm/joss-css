@@ -1,0 +1,5 @@
+.box
+  @if(mixin-exists(hook-box))
+    +hook-box
+  @else
+    border: 1px solid red

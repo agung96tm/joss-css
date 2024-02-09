@@ -1,0 +1,6 @@
+@import "../utils/derived-variables"
+
+@each $size in $sizes
+  $i: index($sizes, $size)
+  .is-size-#{$i}
+    font-size: $size !important

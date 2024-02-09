@@ -1,0 +1,6 @@
+@import "../utils/derived-variables"
+
+@each $name, $pair in $colors
+  $color: nth($pair, 1)
+  .has-text-#{$name}
+    color: $color !important

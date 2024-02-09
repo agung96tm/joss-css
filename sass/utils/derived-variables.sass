@@ -1,0 +1,39 @@
+@import "variables"
+@import "functions"
+
+// - Colors
+$color-primary: $color-blue !default
+$color-info: $color-blue !default
+$color-success: $color-green !default
+$color-warning: $color-yellow !default
+$color-danger: $color-red !default
+
+$color-light: $color-white-highest !default
+$color-dark: $color-grey-highest !default
+
+// - Invert Colors
+$color-yellow-invert: findColorInvert($color-yellow) !default
+$color-green-invert: findColorInvert($color-green) !default
+$color-blue-invert: findColorInvert($color-blue) !default
+$color-red-invert: findColorInvert($color-red) !default
+
+$color-primary-invert: findColorInvert($color-primary) !default
+$color-primary-light: findLightColor($color-primary) !default
+$color-primary-dark: findDarkColor($color-primary) !default
+$color-info-invert: findColorInvert($color-info) !default
+$color-info-light: findLightColor($color-info) !default
+$color-info-dark: findDarkColor($color-info) !default
+$color-success-invert: findColorInvert($color-success) !default
+$color-success-light: findLightColor($color-success) !default
+$color-success-dark: findDarkColor($color-success) !default
+$color-warning-invert: findColorInvert($color-warning) !default
+$color-warning-light: findLightColor($color-warning) !default
+$color-warning-dark: findDarkColor($color-warning) !default
+$color-danger-invert: findColorInvert($color-danger) !default
+$color-danger-light: findLightColor($color-danger) !default
+$color-danger-dark: findDarkColor($color-danger) !default
+$color-light-invert: findColorInvert($color-light) !default
+$color-dark-invert: findColorInvert($color-dark) !default
+
+$colors: ("white", ($color-white, $color-black)), ("black", ($color-black, $color-white), ("light": ($color-light, $color-light-invert)), ("dark": ($color-dark, $color-dark-invert)), ("primary": ($color-primary, $color-primary-invert)), ("info", ($color-info, $color-info-invert)), ("success", ($color-success, $color-info-invert)), ("warning", ($color-warning, $color-warning-invert)), ("danger": ($color-danger, $color-danger-invert)))
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7
